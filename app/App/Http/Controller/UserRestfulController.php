@@ -26,7 +26,7 @@ class UserRestfulController extends AbstractRestfulController
         return $this
             ->json()
             ->render($data)
-            ->to($this->response);
+            ->to($this->response, $data['code']);
     }
 
     /**
@@ -83,7 +83,7 @@ class UserRestfulController extends AbstractRestfulController
         return $this
             ->json()
             ->render($data)
-            ->to($this->response);
+            ->to($this->response, $data['code']);
     }
 
     /**
@@ -120,7 +120,7 @@ class UserRestfulController extends AbstractRestfulController
         return $this
             ->json()
             ->render($data)
-            ->to($this->response);
+            ->to($this->response, $data['code']);
     }
 
     /**
@@ -156,7 +156,7 @@ class UserRestfulController extends AbstractRestfulController
         return $this
             ->json()
             ->render($data)
-            ->to($this->response);
+            ->to($this->response, $data['code']);
     }
 
     /**
@@ -189,6 +189,6 @@ class UserRestfulController extends AbstractRestfulController
         return $this
             ->json()
             ->render($data)
-            ->to($this->response);
+            ->to($this->response, $data['code']);
     }
 }
